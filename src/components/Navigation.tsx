@@ -43,7 +43,7 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="text-xl font-bold text-foreground hover:text-ios-blue transition-colors duration-300"
           >
-            YN
+            VL
           </button>
 
           {/* Desktop Navigation */}

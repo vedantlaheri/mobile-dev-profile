@@ -7,22 +7,22 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "laherits46@gmail.com",
+      href: "mailto:laherits46@gmail.com",
       description: "Send me an email for project inquiries"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       title: "LinkedIn",
-      value: "linkedin.com/in/yourprofile",
-      href: "https://linkedin.com/in/yourprofile",
+      value: "linkedin.com/in/vedantlaheri1311",
+      href: "https://linkedin.com/in/vedantlaheri1311",
       description: "Connect with me professionally"
     },
     {
       icon: <Github className="w-6 h-6" />,
       title: "GitHub",
-      value: "github.com/yourusername",
-      href: "https://github.com/yourusername",
+      value: "github.com/vedantlaheri",
+      href: "https://github.com/vedantlaheri",
       description: "Check out my code repositories"
     }
   ];
@@ -97,7 +97,7 @@ const ContactSection = () => {
                   className="bg-white text-ios-blue hover:bg-white/90 transition-all duration-300 hover:scale-105"
                   asChild
                 >
-                  <a href="mailto:your.email@example.com">
+                  <a href="mailto:laherits46@gmail.com">
                     <Mail className="w-5 h-5 mr-2" />
                     Send Email
                   </a>
@@ -121,7 +121,7 @@ const ContactSection = () => {
           <div className="mt-12 text-center space-y-4">
             <div className="flex items-center justify-center text-muted-foreground">
               <MapPin className="w-4 h-4 mr-2 text-ios-blue" />
-              <span className="text-sm">Currently based in [Your Location]</span>
+              <span className="text-sm">Currently based in Ahmedabad, Gujarat, India</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Open to remote opportunities and collaborative projects

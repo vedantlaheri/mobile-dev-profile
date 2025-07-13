@@ -23,13 +23,17 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-slide-up">
             Hi, I'm{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Your Name
+              Vedant Laheri
             </span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl text-ios-gray-light mb-8 animate-slide-up [animation-delay:200ms]">
+          <h2 className="text-2xl md:text-3xl text-ios-gray-light mb-4 animate-slide-up [animation-delay:200ms]">
             iOS Developer
           </h2>
+          
+          <p className="text-lg text-muted-foreground mb-8 animate-slide-up [animation-delay:300ms]">
+            📍 Based in Ahmedabad, Gujarat, India
+          </p>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-up [animation-delay:400ms]">
             Passionate about crafting beautiful and intuitive iOS applications. 
@@ -59,13 +63,13 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 animate-slide-up [animation-delay:800ms]">
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:laherits46@gmail.com" 
               className="p-3 rounded-full bg-card hover:bg-ios-blue-light transition-all duration-300 hover:scale-110 shadow-soft"
             >
               <Mail className="w-6 h-6 text-ios-blue" />
             </a>
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/vedantlaheri" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-ios-blue-light transition-all duration-300 hover:scale-110 shadow-soft"
@@ -73,7 +77,7 @@ const HeroSection = () => {
               <Github className="w-6 h-6 text-ios-blue" />
             </a>
             <a 
-              href="https://linkedin.com/in/yourprofile" 
+              href="https://linkedin.com/in/vedantlaheri1311" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-ios-blue-light transition-all duration-300 hover:scale-110 shadow-soft"
