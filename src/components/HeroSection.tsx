@@ -10,9 +10,13 @@ const HeroSection = () => {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-ios-gray-lighter">
       <div className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          {/* Profile Image Placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 bg-gradient-primary rounded-full flex items-center justify-center text-white text-4xl font-semibold shadow-large animate-scale-in">
-            YN
+          {/* Profile Image */}
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-large animate-scale-in">
+            <img 
+              src="/lovable-uploads/927141e5-8097-4444-8b6c-1d7f1eb27423.png" 
+              alt="Your Name - iOS Developer" 
+              className="w-full h-full object-cover"
+            />
           </div>
           
           {/* Hero Text */}
