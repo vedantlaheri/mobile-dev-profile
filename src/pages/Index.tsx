@@ -21,7 +21,7 @@ const Index = () => {
       <footer className="bg-ios-gray text-white py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-sm opacity-80">
-            © {new Date().getFullYear()} Your Name. Built with React, TypeScript, and Tailwind CSS.
+            © {new Date().getFullYear()} Vedant Laheri. All rights reserved.
           </p>
         </div>
       </footer>
