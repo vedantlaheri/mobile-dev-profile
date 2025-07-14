@@ -1,36 +1,36 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Smartphone, Camera, Bot } from "lucide-react";
+import { ExternalLink, Github, Smartphone, Heart, Droplets, Plane } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "SocialMediaOn",
-      description: "An image-based social media feed app featuring modern SwiftUI design with MVVM architecture, infinite pagination, and elegant shimmer loading effects. Users can browse, like, and share photos in a Instagram-like interface.",
-      icon: <Smartphone className="w-6 h-6" />,
-      technologies: ["SwiftUI", "MVVM", "Pagination", "Animations", "Firebase"],
-      githubUrl: "https://github.com/yourusername/socialmediaon",
-      appStoreUrl: "https://apps.apple.com/app/socialmediaon",
+      title: "HealthCoach App",
+      description: "A smart health tracking app with support for Bluetooth devices, manual health data entry, and PDF/CSV export. I revamped core features and implemented reusable UI components for seamless navigation.",
+      icon: <Heart className="w-6 h-6" />,
+      technologies: ["Swift", "SwiftUI", "Bluetooth", "CoreData", "PDF Export"],
+      githubUrl: null,
+      appStoreUrl: "https://apps.apple.com/app/healthcoach",
       featured: true
     },
     {
-      title: "GujjuTextScanner",
-      description: "A powerful Gujarati OCR scanner app that leverages ML Kit for accurate text recognition. Supports both camera capture and gallery image selection, making it easy to digitize Gujarati text from various sources.",
-      icon: <Camera className="w-6 h-6" />,
-      technologies: ["Swift", "ML Kit", "OCR", "Camera API", "Core Image"],
-      githubUrl: "https://github.com/yourusername/gujjutextscanner",
-      appStoreUrl: "https://apps.apple.com/app/gujjutextscanner",
+      title: "HealthForYou App",
+      description: "A comprehensive health companion that monitors sleep, steps, oxygen levels, and more. I contributed to key modules for vital tracking and hydration/temperature monitoring.",
+      icon: <Droplets className="w-6 h-6" />,
+      technologies: ["SwiftUI", "HealthKit", "Core Data", "Monitoring", "Charts"],
+      githubUrl: null,
+      appStoreUrl: "https://apps.apple.com/app/healthforyou",
+      featured: true
+    },
+    {
+      title: "Flight Simulator",
+      description: "A SwiftUI-based utility app that features Maps integration, Mods support, and nickname generation. Includes Dropbox integration and editable profiles via CoreData.",
+      icon: <Plane className="w-6 h-6" />,
+      technologies: ["SwiftUI", "MapKit", "Dropbox API", "Core Data", "Mods"],
+      githubUrl: "https://github.com/vedantlaheri/flight-simulator",
+      appStoreUrl: null,
       featured: false
-    },
-    {
-      title: "AI Resume Bot",
-      description: "An intelligent job application automation tool that uses AI to analyze user resumes and automatically apply to relevant job postings. Features smart matching algorithms and personalized application generation.",
-      icon: <Bot className="w-6 h-6" />,
-      technologies: ["SwiftUI", "AI Integration", "API", "Core Data", "Automation"],
-      githubUrl: "https://github.com/yourusername/ai-resume-bot",
-      appStoreUrl: "https://apps.apple.com/app/ai-resume-bot",
-      featured: true
     }
   ];
 
@@ -41,11 +41,10 @@ const ProjectsSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Featured Projects
+              📱 Featured Projects
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A showcase of iOS applications I've built, demonstrating various 
-              technologies and development approaches.
+              Real apps that help real people. Here's where my code meets the world and makes a difference.
             </p>
           </div>
 
@@ -92,27 +91,31 @@ const ProjectsSection = () => {
                   
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-4">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="flex-1 border-ios-blue text-ios-blue hover:bg-ios-blue-light transition-all duration-300"
-                      asChild
-                    >
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </a>
-                    </Button>
-                    <Button 
-                      size="sm" 
-                      className="flex-1 bg-gradient-primary hover:shadow-medium transition-all duration-300"
-                      asChild
-                    >
-                      <a href={project.appStoreUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        App Store
-                      </a>
-                    </Button>
+                    {project.githubUrl && (
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex-1 border-ios-blue text-ios-blue hover:bg-ios-blue-light transition-all duration-300"
+                        asChild
+                      >
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-4 h-4 mr-2" />
+                          GitHub
+                        </a>
+                      </Button>
+                    )}
+                    {project.appStoreUrl && (
+                      <Button 
+                        size="sm" 
+                        className={`${project.githubUrl ? 'flex-1' : 'w-full'} bg-gradient-primary hover:shadow-medium transition-all duration-300`}
+                        asChild
+                      >
+                        <a href={project.appStoreUrl} target="_blank" rel="noopener noreferrer">
+                          <Smartphone className="w-4 h-4 mr-2" />
+                          App Store
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -127,7 +130,7 @@ const ProjectsSection = () => {
               className="border-ios-blue text-ios-blue hover:bg-ios-blue-light transition-all duration-300 hover:scale-105"
               asChild
             >
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/vedantlaheri" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 mr-2" />
                 View All Projects on GitHub
               </a>
