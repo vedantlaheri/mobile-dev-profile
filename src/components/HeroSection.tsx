@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           {/* Profile Image */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-large animate-scale-in">
+          <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-large animate-scale-in">
             <img 
               src="/lovable-uploads/927141e5-8097-4444-8b6c-1d7f1eb27423.png" 
               alt="Your Name - iOS Developer" 
