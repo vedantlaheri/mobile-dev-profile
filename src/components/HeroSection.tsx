@@ -7,8 +7,8 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-ios-gray-lighter">
-      <div className="container mx-auto px-6 py-20">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-ios-gray-lighter px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           {/* Profile Image */}
           <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-large animate-scale-in">
@@ -20,22 +20,22 @@ const HeroSection = () => {
           </div>
           
           {/* Hero Text */}
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-slide-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-slide-up">
             Hi, I'm{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Vedant Laheri
             </span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl text-ios-gray-light mb-4 animate-slide-up [animation-delay:200ms]">
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-ios-gray-light mb-4 animate-slide-up [animation-delay:200ms]">
             iOS Developer
           </h2>
           
-          <p className="text-lg text-muted-foreground mb-8 animate-slide-up [animation-delay:300ms]">
+          <p className="text-base sm:text-lg text-muted-foreground mb-8 animate-slide-up [animation-delay:300ms]">
             📍 Based in Ahmedabad, Gujarat, India
           </p>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-up [animation-delay:400ms]">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-up [animation-delay:400ms]">
             Passionate about crafting beautiful and intuitive iOS applications. 
             Recently transitioned into iOS development with a strong foundation in 
             Swift, SwiftUI, and modern app architecture.
