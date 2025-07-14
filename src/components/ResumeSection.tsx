@@ -72,12 +72,13 @@ const ResumeSection = () => {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
               A comprehensive overview of my journey, skills, and achievements in iOS development.
             </p>
+            <a href="/Vedant_Laheri_Resume_main.pdf" download>
             <Button 
               size="lg" 
               className="bg-gradient-primary hover:shadow-medium transition-all duration-300 hover:scale-105"
             >
               <Download className="w-5 h-5 mr-2" />
-              Download PDF Resume
+              Download My Resume
             </Button>
           </div>
 
