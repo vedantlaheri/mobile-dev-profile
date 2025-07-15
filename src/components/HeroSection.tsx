@@ -89,10 +89,10 @@ const HeroSection = () => {
               download="Vedant_Laheri_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card hover:bg-ios-blue-light transition-all duration-300 hover:scale-110 shadow-soft border border-primary/20"
+              className="p-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all duration-300 hover:scale-110 shadow-medium"
               title="Download Resume"
             >
-              <Download className="w-6 h-6 text-ios-blue" />
+              <Download className="w-6 h-6" />
             </a>
           </div>
         </div>
