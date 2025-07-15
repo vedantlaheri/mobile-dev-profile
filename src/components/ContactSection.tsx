@@ -106,7 +106,7 @@ const ContactSection = () => {
   <Button 
     size="lg"
     variant="outline"
-    className="border-white text-white hover:bg-white/20 transition-all duration-300 hover:scale-105"
+     className="bg-white text-ios-blue hover:bg-white/90 transition-all duration-300 hover:scale-105"
     asChild
   >
     <a href="/Vedant_Laheri_Resume_main.pdf" download>
