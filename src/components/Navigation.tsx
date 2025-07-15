@@ -31,18 +31,21 @@ const Navigation = () => {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-background/95 backdrop-blur-md shadow-soft' 
           : 'bg-transparent'
-      }`}
+      }}
     >
-    <button
-  onClick={() => scrollToSection('contact')}
-  className="text-lg sm:text-xl font-bold text-foreground hover:text-ios-blue transition-colors duration-300"
->
-  Vedant Laheri
-</button>
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="flex items-center justify-between h-14 sm:h-16">
+          {/* Logo */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="text-lg sm:text-xl font-bold text-foreground hover:text-ios-blue transition-colors duration-300"
+          >
+            Vedant Laheri
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
