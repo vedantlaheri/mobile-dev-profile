@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, Download } from "lucide-react";
 
@@ -86,13 +87,13 @@ const HeroSection = () => {
             </a>
             <a 
               href="/Vedant_Laheri_Resume_main.pdf" 
-              download="Vedant_Laheri_Resume.pdf"
+              download="Vedant_Laheri_Resume_main.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all duration-300 hover:scale-110 shadow-medium"
+              className="p-4 rounded-full bg-ios-blue text-white hover:bg-ios-blue/90 transition-all duration-300 hover:scale-110 shadow-large border-2 border-white"
               title="Download Resume"
             >
-              <Download className="w-6 h-6" />
+              <Download className="w-7 h-7" />
             </a>
           </div>
         </div>
