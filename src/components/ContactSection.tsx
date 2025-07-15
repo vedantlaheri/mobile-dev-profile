@@ -94,7 +94,7 @@ const ContactSection = () => {
                 <Button 
                   size="lg"
                   variant="secondary"
-                  className="bg-white text-ios-blue hover:bg-white/90 transition-all duration-300 hover:scale-105"
+                  className="bg-ios-blue text-ios-blue hover:bg-white/90 transition-all duration-300 hover:scale-105"
                   asChild
                 >
                   <a href="mailto:laherits46@gmail.com">
