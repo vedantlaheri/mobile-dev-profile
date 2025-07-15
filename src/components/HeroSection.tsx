@@ -85,8 +85,8 @@ const HeroSection = () => {
               <Linkedin className="w-6 h-6 text-ios-blue" />
             </a>
             <a 
-              href="/resume.pdf" 
-              download
+              href="/Vedant_Laheri_Resume_main.pdf" 
+              download="Vedant_Laheri_Resume.pdf"
               className="p-3 rounded-full bg-card hover:bg-ios-blue-light transition-all duration-300 hover:scale-110 shadow-soft"
             >
               <Download className="w-6 h-6 text-ios-blue" />

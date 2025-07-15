@@ -37,23 +37,23 @@ const Navigation = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-xl font-bold text-foreground hover:text-ios-blue transition-colors duration-300"
+            className="text-lg sm:text-xl font-bold text-foreground hover:text-ios-blue transition-colors duration-300"
           >
-            VL
+            Vedant Laheri
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-muted-foreground hover:text-ios-blue transition-colors duration-300 font-medium"
+                className="text-sm lg:text-base text-muted-foreground hover:text-ios-blue transition-colors duration-300 font-medium"
               >
                 {item.label}
               </button>

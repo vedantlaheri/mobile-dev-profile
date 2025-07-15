@@ -4,6 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { Download, MapPin, Mail, Phone, Linkedin, Github, Calendar, Award } from "lucide-react";
 
 const ResumeSection = () => {
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  };
   const experiences = [
     {
       title: "iOS Developer",
@@ -61,21 +64,21 @@ const ResumeSection = () => {
   ];
 
   return (
-    <section id="resume" className="py-20 bg-gray-100">
+    <section id="resume" className="py-12 sm:py-16 lg:py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6">
               📄 Resume
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-8">
               A comprehensive overview of my journey, skills, and achievements in iOS development.
             </p>
-            <a href="/Vedant_Laheri_Resume_main.pdf" download>
+            <a href="/Vedant_Laheri_Resume_main.pdf" download="Vedant_Laheri_Resume.pdf">
               <Button 
                 size="lg" 
-                className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 hover:scale-105"
+                className="bg-gradient-primary hover:shadow-medium transition-all duration-300 hover:scale-105"
               >
                 <Download className="w-5 h-5 mr-2" />
                 Download My Resume
@@ -84,49 +87,49 @@ const ResumeSection = () => {
           </div>
 
           {/* Personal Info Card */}
-          <Card className="bg-white shadow-md hover:shadow-lg transition-all duration-300 mb-12">
-            <CardContent className="p-6 sm:p-8">
-              <div className="grid md:grid-cols-2 gap-8">
+          <Card className="bg-card shadow-soft hover:shadow-medium transition-all duration-300 mb-8 sm:mb-12">
+            <CardContent className="p-4 sm:p-6 lg:p-8">
+              <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Vedant Laheri</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6">Vedant Laheri</h3>
                   <div className="space-y-3">
-                    <div className="flex items-center text-gray-600">
-                      <MapPin className="w-5 h-5 mr-3 text-blue-600" />
-                      <span>Ahmedabad, Gujarat, India</span>
+                    <div className="flex items-start sm:items-center text-muted-foreground">
+                      <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-primary mt-1 sm:mt-0 flex-shrink-0" />
+                      <span className="text-sm sm:text-base">Ahmedabad, Gujarat, India</span>
                     </div>
-                    <div className="flex items-center text-gray-600">
-                      <Mail className="w-5 h-5 mr-3 text-blue-600" />
-                      <a href="mailto:laherits46@gmail.com" className="hover:text-blue-600 transition-colors">
+                    <div className="flex items-start sm:items-center text-muted-foreground">
+                      <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-primary mt-1 sm:mt-0 flex-shrink-0" />
+                      <a href="mailto:laherits46@gmail.com" className="hover:text-primary transition-colors text-sm sm:text-base break-all">
                         laherits46@gmail.com
                       </a>
                     </div>
-                    <div className="flex items-center text-gray-600">
-                      <Linkedin className="w-5 h-5 mr-3 text-blue-600" />
+                    <div className="flex items-start sm:items-center text-muted-foreground">
+                      <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-primary mt-1 sm:mt-0 flex-shrink-0" />
                       <a 
                         href="https://linkedin.com/in/vedantlaheri1311" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="hover:text-blue-600 transition-colors"
+                        className="hover:text-primary transition-colors text-sm sm:text-base break-all"
                       >
                         linkedin.com/in/vedantlaheri1311
                       </a>
                     </div>
-                    <div className="flex items-center text-gray-600">
-                      <Github className="w-5 h-5 mr-3 text-blue-600" />
+                    <div className="flex items-start sm:items-center text-muted-foreground">
+                      <Github className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 text-primary mt-1 sm:mt-0 flex-shrink-0" />
                       <a 
                         href="https://github.com/vedantlaheri" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="hover:text-blue-600 transition-colors"
+                        className="hover:text-primary transition-colors text-sm sm:text-base break-all"
                       >
                         github.com/vedantlaheri
                       </a>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Professional Summary</h4>
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="mt-6 lg:mt-0">
+                  <h4 className="text-base sm:text-lg font-semibold text-foreground mb-3 sm:mb-4">Professional Summary</h4>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     Passionate iOS Developer with over a year of experience creating beautiful and intuitive mobile applications. 
                     Specialized in Swift, SwiftUI, and modern iOS development practices. Proven track record of delivering 
                     production-ready health and fitness applications that improve users' lives.
@@ -137,43 +140,43 @@ const ResumeSection = () => {
           </Card>
 
           {/* Experience Section */}
-          <div className="mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-8 flex items-center">
-              <Award className="w-8 h-8 mr-3 text-blue-600" />
+          <div className="mb-8 sm:mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 sm:mb-8 flex items-center">
+              <Award className="w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 text-primary" />
               Professional Experience
             </h3>
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {experiences.map((exp, index) => (
-                <Card key={index} className="bg-white shadow-md hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6 sm:p-8">
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
+                <Card key={index} className="bg-card shadow-soft hover:shadow-medium transition-all duration-300">
+                  <CardContent className="p-4 sm:p-6 lg:p-8">
+                    <div className="flex flex-col xl:flex-row xl:items-start xl:justify-between mb-4">
                       <div>
-                        <h4 className="text-xl font-semibold text-gray-900">{exp.title}</h4>
-                        <p className="text-lg text-blue-600 font-medium">{exp.company}</p>
+                        <h4 className="text-lg sm:text-xl font-semibold text-foreground">{exp.title}</h4>
+                        <p className="text-base sm:text-lg text-primary font-medium">{exp.company}</p>
                       </div>
-                      <div className="mt-2 lg:mt-0 text-right">
-                        <div className="flex items-center text-gray-600 mb-1 lg:justify-end">
+                      <div className="mt-2 xl:mt-0 xl:text-right">
+                        <div className="flex items-center text-muted-foreground mb-1 xl:justify-end">
                           <Calendar className="w-4 h-4 mr-2" />
-                          <span className="text-sm font-medium">{exp.period}</span>
+                          <span className="text-xs sm:text-sm font-medium">{exp.period}</span>
                         </div>
-                        <div className="flex items-center text-gray-600 lg:justify-end">
+                        <div className="flex items-center text-muted-foreground xl:justify-end">
                           <MapPin className="w-4 h-4 mr-2" />
-                          <span className="text-sm">{exp.location}</span>
+                          <span className="text-xs sm:text-sm">{exp.location}</span>
                         </div>
                       </div>
                     </div>
                     
-                    <p className="text-gray-600 mb-6 leading-relaxed">
+                    <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
                       {exp.description}
                     </p>
                     
                     <div>
-                      <h5 className="font-semibold text-gray-900 mb-3">Key Achievements:</h5>
-                      <ul className="grid md:grid-cols-2 gap-2">
+                      <h5 className="font-semibold text-foreground mb-3">Key Achievements:</h5>
+                      <ul className="grid lg:grid-cols-2 gap-2">
                         {exp.achievements.map((achievement, idx) => (
-                          <li key={idx} className="flex items-start text-gray-600">
-                            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span className="text-sm">{achievement}</span>
+                          <li key={idx} className="flex items-start text-muted-foreground">
+                            <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span className="text-xs sm:text-sm">{achievement}</span>
                           </li>
                         ))}
                       </ul>
@@ -185,19 +188,19 @@ const ResumeSection = () => {
           </div>
 
           {/* Skills Section */}
-          <div className="mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-8">Technical Skills</h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="mb-8 sm:mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 sm:mb-8">Technical Skills</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {Object.entries(skills).map(([category, skillList]) => (
-                <Card key={category} className="bg-white shadow-md hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <h4 className="font-semibold text-gray-900 mb-4">{category}</h4>
-                    <div className="flex flex-wrap gap-2">
+                <Card key={category} className="bg-card shadow-soft hover:shadow-medium transition-all duration-300">
+                  <CardContent className="p-4 sm:p-6">
+                    <h4 className="font-semibold text-foreground mb-3 sm:mb-4 text-sm sm:text-base">{category}</h4>
+                    <div className="flex flex-wrap gap-1 sm:gap-2">
                       {skillList.map((skill) => (
                         <Badge 
                           key={skill} 
                           variant="secondary" 
-                          className="text-xs bg-blue-100 text-blue-600 border-none"
+                          className="text-xs bg-secondary text-secondary-foreground border-none"
                         >
                           {skill}
                         </Badge>
@@ -210,22 +213,22 @@ const ResumeSection = () => {
           </div>
 
           {/* Projects Highlight */}
-          <div className="mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-8">Featured Projects</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="mb-8 sm:mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 sm:mb-8">Featured Projects</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {projects.map((project, index) => (
-                <Card key={index} className="bg-white shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <CardContent className="p-6">
-                    <h4 className="font-semibold text-gray-900 mb-3">{project.name}</h4>
-                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                <Card key={index} className="bg-card shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105">
+                  <CardContent className="p-4 sm:p-6">
+                    <h4 className="font-semibold text-foreground mb-3 text-sm sm:text-base">{project.name}</h4>
+                    <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1 sm:gap-2">
                       {project.technologies.map((tech) => (
                         <Badge 
                           key={tech} 
                           variant="outline" 
-                          className="text-xs border-blue-600 text-blue-600"
+                          className="text-xs border-primary text-primary"
                         >
                           {tech}
                         </Badge>
@@ -239,31 +242,32 @@ const ResumeSection = () => {
 
           {/* Call to Action */}
           <div className="text-center">
-            <Card className="bg-white shadow-md">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <Card className="bg-card shadow-soft">
+              <CardContent className="p-4 sm:p-6 lg:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">
                   Let's Build Something Amazing Together!
                 </h3>
-                <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 max-w-2xl mx-auto">
                   Ready to bring your iOS app idea to life? I'd love to hear about your project 
                   and discuss how we can create something that users will love.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                   <Button 
                     size="lg" 
-                    className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 hover:scale-105"
+                    className="bg-gradient-primary hover:shadow-medium transition-all duration-300 hover:scale-105"
+                    onClick={() => scrollToSection('contact')}
                   >
-                    <Mail className="w-5 h-5 mr-2" />
+                    <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     Get In Touch
                   </Button>
                   <Button 
                     variant="outline" 
                     size="lg"
-                    className="border-blue-600 text-blue-600 hover:bg-blue-100 transition-all duration-300 hover:scale-105"
+                    className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105"
                     asChild
                   >
                     <a href="https://linkedin.com/in/vedantlaheri1311" target="_blank" rel="noopener noreferrer">
-                      <Linkedin className="w-5 h-5 mr-2" />
+                      <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                       Connect on LinkedIn
                     </a>
                   </Button>
