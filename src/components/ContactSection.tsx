@@ -90,30 +90,32 @@ const ContactSection = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button 
-                  size="lg"
-                  variant="secondary"
-                  className="bg-white text-ios-blue hover:bg-white/90 transition-all duration-300 hover:scale-105"
-                  asChild
-                >
-                  <a href="mailto:laherits46@gmail.com">
-                    <Mail className="w-5 h-5 mr-2" />
-                    Send Email
-                  </a>
-                </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white/10 transition-all duration-300 hover:scale-105"
-                  asChild
-                >
-                  <a href="/Vedant_Laheri_Resume_main.pdf" download>
-                    <Download className="w-5 h-5 mr-2" />
-                    Download Resume
-                  </a>
-                </Button>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+  <Button 
+    size="lg"
+    variant="secondary"
+    className="bg-white text-ios-blue hover:bg-white/90 transition-all duration-300 hover:scale-105"
+    asChild
+  >
+    <a href="mailto:laherits46@gmail.com">
+      <Mail className="w-5 h-5 mr-2" />
+      Send Email
+    </a>
+  </Button>
+  
+  <Button 
+    size="lg"
+    variant="outline"
+    className="border-white text-white hover:bg-white/20 transition-all duration-300 hover:scale-105"
+    asChild
+  >
+    <a href="/Vedant_Laheri_Resume_main.pdf" download>
+      <Download className="w-5 h-5 mr-2" />
+      Download Resume
+    </a>
+  </Button>
+</div>
+
             </CardContent>
           </Card>
 
